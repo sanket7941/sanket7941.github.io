@@ -1,0 +1,36 @@
+{
+	"particles":{
+		"number":{
+			"value":150
+		}, 
+		"color":{
+			"value":"#fff"
+		},
+		"shape":{
+			"type":"circle",
+			"stroke":{
+				"width":1,
+				"color":"#ccc"
+			}
+		},
+		"opacity":{
+			"value":0.5,
+			"random":true
+		},
+		"size":{
+			"value":5
+		},
+		"line_linked":{
+			"width":1.5
+		}
+		
+	},
+	"interactivity":{
+		"events":{
+			"onclick":{
+				"enable":false
+			}
+		}
+	}
+		
+}

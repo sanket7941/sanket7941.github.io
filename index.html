@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta changeset="UTF-8">
+	<meta name="viewport" content="width=device-height" initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sanket Naik</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id = "particles-js">		
+		<ul>
+		  <li><a class="active" href="#home">Home</a></li>
+		  <li><a href="#contact">Profile</a></li>
+		  <li><a href="#about">Contact</a></li>
+		</ul>
+		<div id="login">
+			<form>
+				<div>
+					<img src="png/sanket.jpg" alt="" />
+					<br>
+					<label id="name">Sanket Naik</label>
+					<label id="desg">Learner </label>
+					<p>
+					<input id="inet" type="image" src="png/linkedIn.png" alt="Submit" width="30" height="30" onclick = "redirectLinkedIn();"/>
+					<input id="inet" type="image" src="png/github.png" alt="Submit" width="35" height="35" onclick = "redirectGitHub();"/>
+					<input id="inet" type="image" src="png/stackoverflow.png" alt="Submit" width="35" height="35" onclick = "redirectStackoverflow();"/>
+					</p>
+				</div>
+		</form>
+		
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS.load('particles-js',
+		'particles.json', function(){
+			console.log("Particles.json loaded....");
+		});
+	</script>
+	<script type="text/javascript">
+		function redirectLinkedIn(){
+		//debugger;
+		var win = window.open("https://www.linkedin.com/in/sanketnaik1/");
+			if(win){
+				win.focus();
+			}
+			else{
+				alert("Not accessible");
+			}
+		}		
+		function redirectGitHub(){
+		//debugger;
+		var win = window.open("https://github.com/sanket7941/");
+			if(win){
+				win.focus();
+			}
+			else{
+				alert("Not accessible");
+			}
+		}
+		function redirectStackoverflow(){
+		//debugger;
+		var win = window.open("https://electronics.stackexchange.com/users/218846/klystron");
+			if(win){
+				win.focus();
+			}
+			else{
+				alert("Not accessible");
+			}
+		}
+	</script>
+</body>
+</html>
